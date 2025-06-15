@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(255, 250, 244);
+  font-family: "Times New Roman", Times, serif;
+}
+.heading {
+  display: grid;
+  grid-template-rows: 60px;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+#motto{
+  padding-left: 20px;
+}
+#logo {
+  width: 60px;
+  justify-items: start;
+}
+#header {
+  text-align: center;
+  font-size: 2rem;
+  justify-items: center;
+  color: black;
+}
+.btns {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+}
+.btns button {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 250, 244);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btns button a {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+.fa-user{
+  font-size: 22px;
+  padding-left: 5px;
+  
+}
+#log_in {
+  padding-right: 10px;
+}
+.footer {
+  width: 100%;
+  background-color: rgb(228, 223, 223);
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 17px;
+  font-family: sans-serif;
+  color: rgb(121, 118, 118);
+}
+.fa-copyright{
+  font-size: 20px;
+}
+.form-box {
+  width: 90%;
+  max-width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: center;
+}
+.form-box h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #3c00a0;
+  position: relative;
+}
+.form-box h2::after {
+  content: "";
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  background: #3c00a0;
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.form-box .input-field {
+  background: #eaeaea;
+  margin: 15px 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 15px 18px;
+}
+form p {
+  text-align: left;
+  font-size: 13px;
+}
+form p a {
+  text-decoration: none;
+}
+.input-group{
+    margin-bottom: 20px;
+}
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-field button{
+    width: 48%;
+    background: #3c00a0;
+    color: white;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+.btn-field button.disable{
+    background: rgba(225, 225, 225, 0.342);
+    color: #3c00a0;
+}
+#username{
+    display: none;
+}
+#confirmPassword{
+    display: none;
+}
