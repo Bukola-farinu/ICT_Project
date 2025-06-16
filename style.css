@@ -18,7 +18,9 @@ body {
   z-index: 10;
 }
 #motto{
-  padding-left: 20px;
+  padding-left: 30px;
+  margin-top: -17px;
+  font-size: 12px;
 }
 #logo {
   width: 60px;
@@ -55,6 +57,16 @@ body {
 }
 #log_in {
   padding-right: 10px;
+}
+table tr th {
+  border: 2px solid black;
+}
+table tr td {
+  border: 1px solid black;
+  padding: 10px;
+}
+table{
+  border-collapse: collapse;
 }
 .footer {
   width: 100%;
