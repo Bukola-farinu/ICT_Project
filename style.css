@@ -58,7 +58,7 @@ body {
 #log_in {
   padding-right: 10px;
 }
-table tr th {
+/* table tr th {
   border: 2px solid black;
 }
 table tr td {
@@ -67,10 +67,64 @@ table tr td {
 }
 table{
   border-collapse: collapse;
+  margin: 10px ;
+} */
+ .group-number{
+  margin-bottom: -15px;
+  margin-left: 20px;
+  margin-top: 15px;
+ }
+table {
+  border-collapse: collapse;
+  /* width: 100%; */
+  font-family: 'Segoe UI', sans-serif;
+  margin: 20px ;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+th, td {
+  padding: 8px 7px;
+  border: 1px solid rgb(244, 254, 255);
+  text-align: left;
+}
+
+/* Header */
+th {
+  background-color: rgba(116, 197, 213, 0.909);
+  color: white;
+}
+
+/* Zebra striping - horizontal (rows) */
+tr:nth-child(even) td {
+  background-color: #f9f9f9;
+}
+
+/* Zebra striping - vertical (columns) */
+td:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+/* Merge both (row + column) with a slightly darker shade */
+tr:nth-child(even) td:nth-child(even) {
+  background-color: #eaeaea;
+}
+
+/* Optional hover */
+tr:hover td {
+  background-color: #ddd !important;
+}
+
+/* Rounded top corners */
+table tr:first-child th:first-child {
+  border-top-left-radius: 8px;
+}
+table tr:first-child th:last-child {
+  border-top-right-radius: 8px;
+}
+
 .footer {
   width: 100%;
-  background-color: rgb(228, 223, 223);
+  background-color: rgba(228, 223, 223, 0.308);
   height: 50px;
   position: fixed;
   bottom: 0;
@@ -102,7 +156,8 @@ table{
 .form-box h2 {
   font-size: 30px;
   margin-bottom: 20px;
-  color: #3c00a0;
+  color:  rgb(22, 86, 99);
+;
   position: relative;
 }
 .form-box h2::after {
@@ -110,7 +165,7 @@ table{
   width: 30px;
   height: 4px;
   border-radius: 3px;
-  background: #3c00a0;
+  background: rgb(22, 86, 99);
   position: absolute;
   bottom: -7px;
   left: 50%;
@@ -131,12 +186,20 @@ input {
   outline: 0;
   padding: 15px 18px;
 }
+.fa-eye{
+  margin-right: -16px;
+  visibility: hidden;
+}
+.fa-eye-slash {
+    padding-right: 10px;
+}
 form p {
   text-align: left;
   font-size: 13px;
 }
 form p a {
   text-decoration: none;
+  color: rgb(22, 86, 99);
 }
 .input-group{
     margin-bottom: 20px;
@@ -148,7 +211,7 @@ form p a {
 }
 .btn-field button{
     width: 48%;
-    background: #3c00a0;
+    background: rgb(22, 86, 99);
     color: white;
     height: 40px;
     border-radius: 20px;
@@ -159,9 +222,9 @@ form p a {
 }
 .btn-field button.disable{
     background: rgba(225, 225, 225, 0.342);
-    color: #3c00a0;
+    color: rgb(22, 86, 99);
 }
-#username{
+#login_email{
     display: none;
 }
 #confirmPassword{

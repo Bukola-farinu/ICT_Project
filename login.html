@@ -8,13 +8,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-      <link rel="icon" type="image/png" href="shopwave.png">
+    <link rel="icon" type="image/png" href="shopwave.png" />
     <title>ShopWave Login</title>
   </head>
   <body>
     <!-- Beginning of Header  -->
     <div class="heading">
-      <img src="shopwave.png" alt="" id="logo" />
+      <a href="index.html"><img src="shopwave.png" alt="" id="logo" /> </a>
       <h2 id="header">ShopWave</h2>
     </div>
     <!-- End of Header  -->
@@ -22,7 +22,7 @@
     <!-- Beginning of Footer  -->
     <div class="footer">
       <i class="fa fa-copyright"></i>
-      <p>Group 1</p>
+      <p>Group 18</p>
     </div>
     <!-- End of Footer  -->
 
@@ -36,7 +36,7 @@
               type="text"
               name="username"
               id="username"
-              placeholder="JohnDoe123"
+              placeholder="Username"
             />
           </div>
           <div class="input-field">
@@ -54,6 +54,8 @@
               id="password"
               placeholder="Password"
             />
+            <i class="fa fa-eye" id="showPassword"></i>
+            <i class="fa fa-eye-slash" id="hidePassword"></i>
           </div>
           <div class="input-field">
             <input
@@ -62,6 +64,16 @@
               id="confirmPassword"
               placeholder="Confirm Password"
             />
+            <i
+              class="fa fa-eye"
+              id="showConfirmPassword"
+              style="display: none"
+            ></i>
+            <i
+              class="fa fa-eye-slash"
+              id="hideConfirmPassword"
+              style="display: none"
+            ></i>
           </div>
           <p id="forgotPassword">Forgot password? <a href="">Click Here!</a></p>
         </div>

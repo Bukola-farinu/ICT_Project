@@ -1,0 +1,11 @@
+.heading{
+    display: flex;
+}
+#logo {
+    margin-left: -20px;
+    width: 50px;
+}
+#welcome {
+    margin-left: 5px;
+    font-size: 35px;
+}
