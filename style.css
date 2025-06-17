@@ -17,7 +17,7 @@ body {
   top: 0;
   z-index: 10;
 }
-#motto{
+#motto {
   padding-left: 30px;
   margin-top: -17px;
   font-size: 12px;
@@ -50,10 +50,9 @@ body {
   text-decoration: none;
   color: black;
 }
-.fa-user{
+.fa-user {
   font-size: 22px;
   padding-left: 5px;
-  
 }
 #log_in {
   padding-right: 10px;
@@ -69,20 +68,21 @@ table{
   border-collapse: collapse;
   margin: 10px ;
 } */
- .group-number{
+.group-number {
   margin-bottom: -15px;
   margin-left: 20px;
   margin-top: 15px;
- }
+}
 table {
   border-collapse: collapse;
   /* width: 100%; */
-  font-family: 'Segoe UI', sans-serif;
-  margin: 20px ;
+  font-family: "Segoe UI", sans-serif;
+  margin: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-th, td {
+th,
+td {
   padding: 8px 7px;
   border: 1px solid rgb(244, 254, 255);
   text-align: left;
@@ -136,13 +136,13 @@ table tr:first-child th:last-child {
   font-family: sans-serif;
   color: rgb(121, 118, 118);
 }
-.fa-copyright{
+.fa-copyright {
   font-size: 20px;
 }
-.copyright{
+.copyright {
   display: flex;
 }
-.copyright p{
+.copyright p {
   padding-left: 5px;
   padding-top: 1px;
   font-size: 17px;
@@ -164,8 +164,7 @@ table tr:first-child th:last-child {
 .form-box h2 {
   font-size: 30px;
   margin-bottom: 20px;
-  color:  rgb(22, 86, 99);
-;
+  color: rgb(22, 86, 99);
   position: relative;
 }
 .form-box h2::after {
@@ -194,12 +193,12 @@ input {
   outline: 0;
   padding: 15px 18px;
 }
-.fa-eye{
+.fa-eye {
   margin-right: -16px;
   visibility: hidden;
 }
 .fa-eye-slash {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 form p {
   text-align: left;
@@ -209,32 +208,207 @@ form p a {
   text-decoration: none;
   color: rgb(22, 86, 99);
 }
-.input-group{
-    margin-bottom: 20px;
+.input-group {
+  margin-bottom: 20px;
 }
-.btn-field{
+.btn-field {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-field button {
+  width: 48%;
+  background: rgb(22, 86, 99);
+  color: white;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 1s;
+}
+.btn-field button.disable {
+  background: rgba(225, 225, 225, 0.342);
+  color: rgb(22, 86, 99);
+}
+#login_email {
+  display: none;
+}
+#confirmPassword {
+  display: none;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* 🖥 Large desktops (1200px and above) */
+@media (min-width: 1200px) {
+  .form-box {
+    width: 450px;
+    padding: 60px;
+  }
+  #header {
+    font-size: 2.5rem;
+  }
+  /* motto unchanged at this size */
+}
+
+/* 💻 Medium screens (tablets & small laptops, 992px to 1199px) */
+@media (max-width: 1199px) {
+  .form-box {
+    width: 80%;
+    padding: 50px 40px;
+  }
+  .heading {
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 15px 20px;
+  }
+  /* motto: slightly smaller font */
+  #motto {
+    font-size: 11px;
+  }
+}
+
+/* 📱 Tablets and large phones (768px to 991px) */
+@media (max-width: 991px) {
+  .form-box {
+    width: 90%;
+    padding: 40px 30px;
+  }
+
+  .heading {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    column-gap: 10px;
+    align-items: center;
+    text-align: left;
+  }
+  #header {
+    justify-self: center;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .btns {
+    justify-content: center;
+  }
+
+  #header {
+    font-size: 1.8rem;
+  }
+
+  /* ---- Motto tweaks for mid-size screens ---- */
+  #motto {
+    grid-column: 1 / -1; /* span full width */
+    font-size: 10px;
+    margin-top: 4px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    font-size: 15px;
+    height: auto;
+    padding: 10px 5px;
+    text-align: center;
+    gap: 5px;
+  }
+
+  .copyright {
+    justify-content: center;
+  }
+}
+
+/* 📱 Small phones (up to 767px) */
+@media (max-width: 767px) {
+  .form-box {
+    width: 95%;
+    padding: 30px 20px;
+    top: 52%;
+  }
+  .form-box h2 {
+    font-size: 24px;
+  }
+
+  .btn-field {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-field button {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+  }
+
+  .heading {
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 10px;
+  }
+  #logo {
+    margin: 0;
+  }
+  #header {
+    justify-self: center;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  #header {
+    font-size: 1.5rem;
+  }
+
+  /* ---- Motto tweaks for small phones ---- */
+  #motto {
+    grid-column: 1 / -1;
+    font-size: 9px;
+    margin-top: 4px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .btns {
+    justify-content: center;
+  }
+
+  table {
+    font-size: 13px;
+    margin: 10px;
+  }
+
+  th,
+  td {
+    padding: 6px;
+  }
 }
-.btn-field button{
-    width: 48%;
-    background: rgb(22, 86, 99);
-    color: white;
-    height: 40px;
-    border-radius: 20px;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-    transition: background 1s;
-}
-.btn-field button.disable{
-    background: rgba(225, 225, 225, 0.342);
-    color: rgb(22, 86, 99);
-}
-#login_email{
-    display: none;
-}
-#confirmPassword{
-    display: none;
+
+/* 📱 Extra small devices (up to 480px) */
+@media (max-width: 480px) {
+  .form-box {
+    padding: 25px 15px;
+  }
+
+  input {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+
+  .form-box h2 {
+    font-size: 20px;
+  }
+
+  .btns button a {
+    font-size: 16px;
+  }
+
+  .footer {
+    font-size: 13px;
+  }
+
+  .copyright p {
+    font-size: 13px;
+  }
+
+  /* ---- Motto tweaks for extra‑small ---- */
+  #motto {
+    font-size: 8.5px;
+  }
 }
