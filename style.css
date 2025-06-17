@@ -139,6 +139,14 @@ table tr:first-child th:last-child {
 .fa-copyright{
   font-size: 20px;
 }
+.copyright{
+  display: flex;
+}
+.copyright p{
+  padding-left: 5px;
+  padding-top: 1px;
+  font-size: 17px;
+}
 .form-box {
   width: 90%;
   max-width: 450px;
