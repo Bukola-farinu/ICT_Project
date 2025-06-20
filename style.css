@@ -16,6 +16,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 10;
+  background-color: rgb(255, 250, 244);
 }
 #motto {
   padding-left: 30px;

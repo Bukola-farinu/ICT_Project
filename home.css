@@ -1,4 +1,4 @@
-.heading{
+/* .heading{
     display: flex;
 }
 #logo {
@@ -8,4 +8,34 @@
 #welcome {
     margin-left: 5px;
     font-size: 35px;
+} */
+ #bars{
+    position: relative;
+    display: inline-block;
+ }
+.fa-bars{
+    font-size: 25px;
+    margin-left: 280px ;
+}
+.list{
+    font-size: 22px;
+    position: absolute;
+    right: 0;
+    margin-top: 85px;
+    margin-right: 10px;
+    display: none;
+    /* background: #fff; */
+
+}
+.list li{
+    list-style: none;
+    padding: 10px ;
+}
+.list li:hover{
+    background: #eaeaea;
+    width: 100%;
+}
+.list li a{
+    text-decoration: none;
+    color: #000;
 }
